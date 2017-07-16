@@ -19,8 +19,8 @@
     "pretest:once": "npm run build",
     "test:once": "karma start karma.conf.js --single-run",
     "lint": "tslint ./src/**/*.ts -t verbose",
-    "mb-build": "webpack --watch",
-    "mb-run": "webpack-dev-server --progress --color --watch"
+    "dda-build": "webpack --watch",
+    "dda-run": "webpack-dev-server --progress --color --watch"
   },
   "keywords": [],
   "author": "",
