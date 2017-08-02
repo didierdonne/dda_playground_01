@@ -1,21 +1,41 @@
 import { Component } from '@angular/core';
-import { Candles } from './candles';
+import { Crosshair } from './components/crosshair.component';
+import { Candle } from './models/candle.model';
 
 @Component({
   selector: 'my-chart',
-  template: '<h1>{{myTest}}</h1>'
+  template: `
+    <svg id="chart" (mousemove)="this.moveCrosshair($event.clientX, $event.clientY)">
+      <svg:g [crosshair_x]="crosshair_x" [crosshair_y]="crosshair_y" chart-crosshair />
+      <svg:g chart-candles />
+    </svg>
+  `,
+  styleUrls: ['src/app/chart.css']
 })
 
 export class Chart {
 
-  myTest: string;
+  crosshair_x: number = 0;
+  crosshair_y: number = 0;
+
+  candleData: Array<Candle> = [];
 
   constructor(){
-    this.myTest = Candles.candle;
+    this.candleData.push({
+      o: 25,
+      h: 30,
+      l: 22,
+      c: 24,
+      vol: 100,
+      time: '1200'
+    })
   }
 
+  ngOnInit(){
+  }
 
-
-
-
+  moveCrosshair(x, y){
+    this.crosshair_x = x;
+    this.crosshair_y = y;
+  }
 }
