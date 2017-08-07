@@ -1,0 +1,44 @@
+Intro screen
+------------
+login
+
+
+Mode selection screen
+---------------------
+select story mode or aracde
+
+
+Story mode
+----------
+User is guided through each story with lots of explanation popups.
+Explaining breakouts, charts, candles, calls and puts.
+
+Story 1: Your first chart.
+Story 2: Calls and Puts, long and short.
+Story 3:
+
+
+Arcade mode
+-----------
+No stories here.  Pick one ore more patterns to practice or go at random.
+
+
+Quiz mode
+---------
+Learn to recognize the pattern,  Answer questions, test your knowledge.
+
+
+
+===============================================================================================
+
+TECHNICAL NOTES
+
+Story mode data:
+
+type: dialog,drawing,candle
+dialog:
+  text and formatting (css classes for formatting)
+drawing:
+  type: support line, line
+candle:
+  open, high, low, close, time, volume

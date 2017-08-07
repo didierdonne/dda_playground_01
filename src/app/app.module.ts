@@ -8,10 +8,13 @@ import { Chart } from './chart.component';
 import { Crosshair } from './components/crosshair.component';
 import { Candles } from './components/candles.component';
 
+import { CandleService } from './services/candle.service';
+
 @NgModule({
   imports:      [ BrowserModule, FormsModule, HttpModule ],
   bootstrap:    [ AppComponent ],
-  declarations: [ AppComponent, Chart, Crosshair, Candles ]
+  declarations: [ AppComponent, Chart, Crosshair, Candles ],
+  providers:    [ CandleService ]
 })
 
 export class AppModule {
