@@ -16,7 +16,7 @@ Explaining breakouts, charts, candles, calls and puts.
 Story 1: Your first chart.
 Story 2: Calls and Puts, long and short.
 Story 3:
-
+270271272273274275276277278336337338339340
 
 Arcade mode
 -----------
@@ -42,3 +42,8 @@ drawing:
   type: support line, line
 candle:
   open, high, low, close, time, volume
+
+
+
+PROGRAM FLOW:
+intro > login > mode selection > story | 269
