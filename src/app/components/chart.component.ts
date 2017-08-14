@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
-import { Crosshair } from './components/crosshair.component';
-import { CandleService } from './services/candle.service';
+import { Crosshair } from '../components/crosshair.component';
+import { CandleService } from '../services/candle.service';
 
-import { Candle } from './models/candle.model';
+import { Candle } from '../models/candle.model';
 
 @Component({
   selector: 'my-chart',
@@ -12,7 +12,7 @@ import { Candle } from './models/candle.model';
       <svg:g chart-crosshair [crosshair_x]="crosshair_x" [crosshair_y]="crosshair_y"  />
     </svg>
   `,
-  styleUrls: ['src/app/chart.css']
+  styleUrls: ['src/app/components/chart.css']
 })
 
 export class Chart {
