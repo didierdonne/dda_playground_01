@@ -12,7 +12,7 @@ import { Candle } from '../models/candle.model';
       <svg:g chart-crosshair [crosshair_x]="crosshair_x" [crosshair_y]="crosshair_y"  />
     </svg>
   `,
-  styleUrls: ['src/app/components/chart.css']
+  styleUrls: ['src/app/components/chart.component.css']
 })
 
 export class Chart {
