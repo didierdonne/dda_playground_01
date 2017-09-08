@@ -1,8 +1,8 @@
 .candleBody{
-  fill: rgb(26, 228, 71);
+  fill: rgb(13, 185, 51);
 }
 
 .candleLine{
-  stroke: rgb(26, 228, 71);
+  stroke: rgb(13, 185, 51);
   stroke-width: 2px;
 }

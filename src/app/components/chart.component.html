@@ -1,0 +1,6 @@
+<div class="container">
+  <svg id="chart" preserveAspectRatio="none" (mousemove)="this.moveCrosshair($event.clientX, $event.clientY, $event.srcElement.clientWidth, $event.srcElement.clientHeight, $event)">
+    <svg:g chart-candles *ngFor="let candle of candles" [x1]="candle.high" [x2]="candle.low" [x]="candle.time" [y]="candle.open" [height]="candle.close"/>
+    <svg:g chart-crosshair [crosshair_x]="crosshair_x" [crosshair_y]="crosshair_y" [crosshair_w]="crosshair_w" [crosshair_h]="crosshair_h" />
+  </svg>
+</div>

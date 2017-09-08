@@ -5,13 +5,7 @@ import { CandleService } from '../services/candle.service';
 import { Candle } from '../models/candle.model';
 
 @Component({
-  selector: 'my-chart',
-  template: `
-    <svg id="chart" (mousemove)="this.moveCrosshair($event.clientX, $event.clientY)">
-      <svg:g chart-candles *ngFor="let candle of candles" [x1]="candle.high" [x2]="candle.low" [x]="candle.time" [y]="candle.open" [height]="candle.close"/>
-      <svg:g chart-crosshair [crosshair_x]="crosshair_x" [crosshair_y]="crosshair_y"  />
-    </svg>
-  `,
+  templateUrl: "src/app/components/chart.component.html",
   styleUrls: ['src/app/components/chart.component.css']
 })
 
@@ -19,6 +13,8 @@ export class Chart {
 
   crosshair_x: number = 0;
   crosshair_y: number = 0;
+  crosshair_h: number = 0;
+  crosshair_w: number = 0;
 
   candles: Array<Candle> = [];
 
@@ -30,8 +26,10 @@ export class Chart {
 
   }
 
-  moveCrosshair(x, y){
+  moveCrosshair(x, y, w, h, e){
     this.crosshair_x = x;
     this.crosshair_y = y;
+    this.crosshair_w = w;
+    this.crosshair_h = h;
   }
 }

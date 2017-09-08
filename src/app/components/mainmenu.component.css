@@ -10,3 +10,37 @@
   padding-top: 28px;
   border: 2px solid #0f74ad;
 }
+
+h1{
+  font-family: 'Baloo Bhaijaan', cursive;
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+  text-align: center;
+}
+
+.menuBlue, .menuOrange, .menuRed{
+  box-shadow: 0px 0px 8px #888888;
+}
+
+.menuBlue{
+  /*background: url("img/img_mainMenuBlue.jpg");*/
+  background-color: rgba(26, 116, 210, 0.75);
+}
+
+.menuOrange{
+  /*background: url("img/img_mainMenuOrange.jpg");*/
+  background-color: rgba(233, 171, 31, 0.68);
+}
+
+.menuRed{
+  /*background: url("img/img_mainMenuRed.jpg");*/
+  background-color: rgba(201, 67, 9, 0.78);
+}
+
+.candleLevel{
+  background: url("img/img_candleSm.png");
+  width: 16px;
+  height: 67px;
+  display: inline-block;
+  margin-bottom: 10px;
+}

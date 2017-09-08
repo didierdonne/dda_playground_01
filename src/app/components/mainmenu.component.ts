@@ -2,14 +2,7 @@ import { Component, AfterViewInit } from '@angular/core';
 import { trigger, transition, style, animate, state, stagger, query, keyframes } from '@angular/animations';
 
 @Component({
-  template: `
-    <button (click)="addItem(['hooray', 'for', 'waffles'])">Add Item</button>
-    <div id="container" [@menuAnimation]="items.length">
-      <div id="menu" *ngFor="let item of items">
-        {{ item }}
-      </div>
-    </div>
-  `,
+  templateUrl: 'src/app/components/mainmenu.component.html',
   styleUrls: [ 'src/app/components/mainmenu.component.css' ],
   animations: [
     trigger('menuAnimation', [
